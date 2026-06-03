@@ -1,0 +1,15 @@
+[package]
+name = "tf2-input"
+version = "0.1.0"
+edition = "2021"
+description = "Resolve Titanfall 2 action binds from the engine bind table and query held input state, by action rather than by hardcoded key."
+license = "GPL-3.0-or-later"
+repository = "https://github.com/FromWau/tf2-input-lib"
+authors = ["FromWau"]
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+log = "0.4"
+winapi = { version = "0.3", features = ["libloaderapi", "memoryapi", "winnt"] }
